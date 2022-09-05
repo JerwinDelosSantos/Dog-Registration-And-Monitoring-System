@@ -54,7 +54,7 @@
                         <div class="col-6">
                             <h6 class="text-green">{{ $dog->owner_name }}</h6>
                             <h6 class="text-green">{{ $dog->contact_number }}</h6>
-                            <h6 class="text-green">{{ $dog->barangay->barangay_name }}</h6>
+                            <h6 class="text-green">{{'Purok '}}{{$dog->purok}}{{', '}}{{ $dog->barangay->barangay_name }}</h6>
                         </div>
                     </div>
                     @empty
